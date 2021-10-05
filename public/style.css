@@ -167,6 +167,10 @@ img {
     width: 100%;
 }
 
+.align-right {
+    position: absolute;
+    right: 0;
+}
 
 
 /* ## Buttons */
@@ -261,45 +265,15 @@ a .fab-btn {
 
 /* ## Icons */
 
-
-.btn-options::before {
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f142";
-}
-
-.btn-add::before {
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f067";
-}
-
-.btn-home::before {
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f015";
-}
-
-.btn-event::before {
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f133";
-}
-
-.btn-inbox::before {
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f01c";
-}
-
-.btn-settings::before {
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f013";
-}
-
-.btn-back::before {
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f053";
-}
-
-.btn-calendarcheck::before {
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f274";
-}
-
-.btn-edit::before {
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f044";
-}
-
-
-
+.btn-options::before        { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f142"; }
+.btn-add::before            { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f067"; }
+.btn-home::before           { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f015"; }
+.btn-event::before          { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f133"; }
+.btn-inbox::before          { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f01c"; }
+.btn-settings::before       { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f013"; }
+.btn-back::before           { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f053"; }
+.btn-calendarcheck::before  { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f274"; }
+.btn-edit::before           { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f044"; }
 
 /* # Navbuttons */
 
@@ -373,45 +347,8 @@ select:focus, select:focus {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* ## Table */
-
-td {
-    padding: 5px 15px;
-}
-
-tfoot td {
-    text-align: center;
-    font-weight: 700;
-}
-
-tbody tr:nth-child(odd) {
-    background: var(--surface-color2);
-}
-
-table .btn {
-    background: var(--surface-color3);
-    color: var(--onsurface-color2);
-
-    padding: 5px 10px;
-}
-
-table .btn:hover, 
-table .btn:active {
-    background: var(--onsurface-color3);
-
-    box-shadow: 0 3px 13px rgba(114, 81, 81, 0.2);
-}
-
-
-/* ## Errors */
-
-.errors {
-    color: var(--error-color);
-}
-
 
 /* # General */
-
 
 /* ## Topbar */
 
@@ -434,45 +371,13 @@ table .btn:active {
     margin: 0;
     justify-content: space-between;
     padding: 0;
-}
-
-.topbar.inv {
-    background: var(--bg-color);
     padding: 0 0 0 5%;
-}
-
-.topbar.details {
-    justify-content: flex-start;
 }
 
 .topbar .title  {
     color: var(--onsurface-color);
     font-size: 2.8em;
     font-weight: 500;
-    margin: 0;
-    padding: 0;
-}
-
-.topbar.without-backbtn .title, 
-.topbar.without-backbtn .titlesmall,
-.topbar.without-backbtn .titledesc  {
-    padding-left: 40px;
-}
-
-
-
-.topbar .titlesmall {
-    color: var(--onsurface-color);
-    font-size: 2em;
-    font-weight: 500;
-    margin: 0;
-    padding: 0;
-}
-
-.topbar .titledesc {
-    color: var(--onsurface-color2);
-    font-size: 1.2em;
-    font-weight: 400;
     margin: 0;
     padding: 0;
 }
@@ -491,10 +396,7 @@ table .btn:active {
     box-shadow: 0 0;
 }
 
-.topbar .btn.right {
-    position: absolute;
-    right: 0;
-}
+
 
 
 /* ## Bottomnavbar */
@@ -526,9 +428,6 @@ table .btn:active {
         padding: 0px 30px;
     }
 }
-
-
-
 
 
 
