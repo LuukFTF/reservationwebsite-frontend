@@ -7,7 +7,6 @@ CLE2 Reservation Website Frontend
 - [x] Semantische Tags + het nut van
 - [x] Geen inline css & js
 
-- [ ] Layout ontwerp
 - [x] functionaliteit
 
 - [x] CSS Selectors
