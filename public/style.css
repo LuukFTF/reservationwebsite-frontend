@@ -2,19 +2,16 @@
     /* # Color Themes */
 
     /* ## Dark Theme */
-    --bg-color:             #141518;
+    --bg-color:             #121212;
 
-    --primary-color:        #FF5722;
-    --primary-color2:       #f78c65;
+    --primary-color:        #22cbff;
+    --primary-color2:       #74dafe;
 
-    --surface-color1:       #191D22;
-    --surface-color2:       #1E262E;
-    --surface-color3:       #26323E;
+    --surface-color1:       #1B1B1B;
+    --surface-color2:       #252525;
+    --surface-color3:       #343434;
 
     --error-color:          #CF6679;
-
-    --secondary-color:      #22cbff;
-    --secondary-color2:     #74dafe;
 
     /* ### Oncolors */
 
@@ -28,18 +25,8 @@
 
     --onerror-color:        #000000dd;
 
-    /* ## Light Theme */
-
-
-    /* ## backup */
-    --bg-color-black:       #121212;
-
-    --surface-color1-black: #1B1B1B;
-    --surface-color2-black: #252525;
-    --surface-color3-black: #343434;
-
-    --surface-color-minalpha:#6a9ed30a;
 }
+
 
 /* # Utilities */
 
@@ -90,10 +77,6 @@ body {
 .webcontainer {
     margin: auto;
     max-width: 1100px;
-}
-
-.expanded {
-    background: var(--surface-color1);
 }
 
 /* ## Content */
@@ -170,13 +153,9 @@ img {
     width: 100%;
 }
 
-.align-right {
-    position: absolute;
-    right: 0;
-}
-
-
 /* ## Buttons */
+
+/* ### General button */
 
 .btn, 
 a .btn,
@@ -221,6 +200,8 @@ input[type="submit"] {
 }
 
 
+/* ### Secondary button */
+
 .btn.secondary.s2 {
     background: var(--surface-color2);
     border: 2px solid var(--surface-color3);
@@ -234,6 +215,8 @@ input[type="submit"] {
     box-shadow: 0 3px 13px rgba(0, 0, 0, 0.2);
 }
 
+
+/* ### FAB button */
 
 .fab-btn {
     background: var(--primary-color);
@@ -281,16 +264,6 @@ input[type="submit"] {
 }
 
 
-
-.btn-text {
-    font-size: 0.5em;
-}
-
-.btnrow {
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 /* ## Icons Button Content */
 
 .btncontent-options::before        { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f142"; }
@@ -323,7 +296,8 @@ input[type="submit"] {
     flex-grow: 1;
 }
 
-.active.nav-btn {
+.active.nav-btn,
+.active.nav-btn > h4 {
     color: var(--primary-color);
 }
 
@@ -355,7 +329,7 @@ label {
 
     margin: 0 0 5px 0;
 
-    font-variant: small-caps;
+    font-variant: all-small-caps;
 }
 
 input[type="text"], 
@@ -481,15 +455,6 @@ nav.bottomnavbar  {
     padding: 15px;
 }
 
-.login .main2 {
-    background: var(--surface-color1);
-    border-radius: 5px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    width: 100%;
-    padding: 5px 15px 15px;
-    margin: 10px 0 0;
-}
-
 .login .field-item {
     width: 100%;
     margin: 5px 0;
@@ -503,17 +468,11 @@ nav.bottomnavbar  {
     font-size: 1.1em;
 }
 
-.login .title {
-    color: var(--onsurface-color);
-
-    font-size: 1.5em;
-    font-weight: 700;
+.login h3 {
+    margin: 0;
 }
 
-
-
 .login .buttons {
-    flex-direction: row;
     justify-content: space-between;
     margin: 15px;
     padding: 0;
@@ -556,7 +515,7 @@ nav.bottomnavbar  {
 
 .callist .left h3 {
     color: var(--onsurface-color2);
-    font-variant: small-caps;
+    font-variant: all-all-small-caps;
     font-weight: 300;
     font-size: 1.7em;
     margin: 0;

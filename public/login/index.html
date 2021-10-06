@@ -12,30 +12,32 @@
 
 <body>
     <div class="webcontainer">
-        <section class="logo">LV</section>
+
+        <header class="logo">
+            LV
+        </header>
 
         <section class="login">
-            <form action="../events">
+            <!-- method="POST" -->
+            <form action="../events"> 
                 <div class="main">
-                    <div class="title">Login</div>
-                    <div class="loginform">
-                        <div class="field-item">
-                            <label>username</label>
-                            <input type="text" id="username" name="username" value="">
-                        </div>
-                        <div class="field-item">
-                            <label>password</label>
-                            <input type="password" id="password" name="password" value="">
-                        </div>
+                    <h3>Login</h3>
+                    <div class="field-item">
+                        <label>username</label>
+                        <input type="text" id="username" name="username" value="">
+                    </div>
+                    <div class="field-item">
+                        <label>password</label>
+                        <input type="password" id="password" name="password" value="">
                     </div>
                 </div>
-                <div class="buttons container flex">
-                    <a class="btn secondary flex-item" href="../signup/">Signup<a>
-                    <div class="flex-item"><input class="btn" method="post" type="submit" name="submit" value="Login"></input></div>
+                <div class="buttons flex-row">
+                    <a class="btn secondary" href="../signup/">Signup<a>
+                    <button class="btn" type="submit" name="submit">Login</button>
                 </div>
             </form>
         </section>
+
     </div>
 </body>
-
 </html>
