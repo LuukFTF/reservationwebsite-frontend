@@ -3,21 +3,23 @@ CLE2 Reservation Website Frontend
 
 ## Requirements
 
-- [ ] Heldere structuur
-- [ ] Semantische Tags + het nut van
-- [ ] Geen inline css & js
+- [x] Heldere structuur
+- [x] Semantische Tags + het nut van
+- [x] Geen inline css & js
 
 - [ ] Layout ontwerp
 - [x] functionaliteit
 
-- [ ] CSS Selectors
-- [ ] tags, ids & classes
+- [x] CSS Selectors
+- [x] tags, ids & classes
 - [ ] Absolute en relatieve eenheden
-- [ ] Responsive
-- [ ] desktop/mobile
-- [ ] media queries
+- [x] Responsive
+- [x] desktop/mobile
+- [x] media queries
 - [ ] relatieve eenheden
-- [ ] website werkt in verschillende browsers
+- [x] website werkt in verschillende browsers
+
+- [ ] css ordenen
 
 ## Sitemap
 
