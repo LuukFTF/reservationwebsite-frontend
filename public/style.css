@@ -183,6 +183,8 @@ input[type="submit"] {
     box-shadow: 0 3px 13px rgba(0, 0, 0, 0.2);
 }
 
+/* ### Secondary button */
+
 .btn.secondary {
     background: var(--surface-color1);
     color: var(--primary-color);
@@ -198,9 +200,6 @@ input[type="submit"] {
 
     cursor: pointer;
 }
-
-
-/* ### Secondary button */
 
 .btn.secondary.s2 {
     background: var(--surface-color2);
@@ -275,7 +274,6 @@ input[type="submit"] {
 .btncontent-back::before           { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f053"; }
 .btncontent-calendarcheck::before  { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f274"; }
 .btncontent-edit::before           { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f044"; }
-
 .btncontent-login::before          { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f2f6"; }
  
 /* # Navbuttons */
@@ -296,11 +294,6 @@ input[type="submit"] {
     flex-grow: 1;
 }
 
-.active.nav-btn,
-.active.nav-btn > h4 {
-    color: var(--primary-color);
-}
-
 .nav-btn:hover {
     background: var(--surface-color2);
     color: var(--primary-color2);
@@ -311,6 +304,11 @@ input[type="submit"] {
      
     margin: 0;
     font-size: 0.5em;
+}
+
+.active.nav-btn,
+.active.nav-btn > h4 {
+    color: var(--primary-color);
 }
 
 @media (min-width:600px) { 
@@ -418,26 +416,22 @@ select:focus, select:focus {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-.bottomnavbar {
+nav.navbar  {
     background: var(--surface-color3);
 
     max-width: 100%;
     padding: 0px 0px;
-}
 
-nav.bottomnavbar  {
     flex-direction: row;
     align-items: flex-end;
 }
 
 @media (min-width:600px) { 
-    .bottomnavbar {
+    nav.navbar {
         max-width: min-content;
         padding: 0px 30px;
     }
 }
-
-
 
 /* # Sections */
 
@@ -447,7 +441,7 @@ nav.bottomnavbar  {
     margin: 20px;
 }
 
-.login .main {
+.login .maincard {
     background: var(--surface-color1);
     border-radius: 5px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
