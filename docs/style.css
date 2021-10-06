@@ -36,7 +36,7 @@
     padding: 0;
     margin: 0;
 
-    animation-delay: 1.9s;
+    transition: all 0.2s;
 }
 
 body {

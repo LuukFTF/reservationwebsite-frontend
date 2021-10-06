@@ -18,7 +18,7 @@ CLE2 Reservation Website Frontend
 - [ ] relatieve eenheden
 - [x] website werkt in verschillende browsers
 
-- [ ] css ordenen
+- [x] css ordenen
 
 ## Sitemap
 
