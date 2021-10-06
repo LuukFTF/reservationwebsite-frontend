@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, 
-    initial-schale=1.0">
+    <meta name="viewport" content="width=device-width, initial-schale=1.0">
     <script src="https://kit.fontawesome.com/0bc22cc72a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../style.css">
 
@@ -13,120 +12,111 @@
 
 <body>
 
-    <section class="topbar-container">
-        <div class="topbar container flex">
-            <div class="title flex-item"> October </div> 
-            <a class="btn topbar-btn btn-options flex-item"></a>
-        </div>
-    </section>
+    <header class="topbar flex">
+        <h2>October</h2> 
+        <a class="btn btncontent-options"></a>
+    </header>
         
     <div class="webcontainer">
         
-    <section class="calendar-list callist-default">
-        <div class="callist container flex">
-            
-            <div class="calllist-item flex-item container flex">
-                <div class="callist-left flex-item">
-                    <div class="day">MON</div>
-                    <div class="dayofmonth">4</div>
-                </div>
-
-                <a class="callist-right item" href="../eventdetail">
-                    <div class="title">CLE</div>
-                    <div class="time">9:30 - 12:30</div>
-                </a>
+    <main class="callist flex">
+        
+        <div class="item flex">
+            <div class="left">
+                <h3>MON</h3>
+                <h2>4</h2>
             </div>
+            <a class="right" href="../eventdetail">
+                <h3>CLE</h3>
+                <h4>9:30 - 12:30</h4>
+            </a>
+        </div>
 
-            <!-- start repeat -->
-            <div class="calllist-item flex-item container flex">
-                <div class="callist-left flex-item">
-                    <div class="day"></div>
-                    <div class="dayofmonth"></div>
-                </div>
+        <!-- start repeat -->
+        <div class="item flex">
+            <div class="left"></div>
+            <a class="right" href="../eventdetail">
+                <h3>BB Frontend Zelfstudie</h3>
+                <h4>14:00 - 18:00</h4>
+            </a>
+        </div>
 
-                <a class="callist-right item" href="../eventdetail">
-                    <div class="title">BB Frontend Zelfstudie</div>
-                    <div class="time">14:00 - 18:00</div>
-                </a>
+        <div class="item flex">
+            <div class="left">
+                <h3>TUE</h3>
+                <h2>5</h2>
             </div>
-
-            <div class="calllist-item flex-item container flex">
-                <div class="callist-left flex-item">
-                    <div class="day">TUE</div>
-                    <div class="dayofmonth">5</div>
-                </div>
-
-                <a class="callist-right item" href="../eventdetail">
-                    <div class="title">Zelfstudie Programmeren 5</div>
-                    <div class="time">10:00 - 17:00</div>
-                </a>
+            <a class="right" href="../eventdetail">
+                <h3>Zelfstudie Programmeren 5</h3>
+                <h4>10:00 - 17:00</h4>
+            </a>
+        </div>
+        
+        <div class="item flex">
+            <div class="left">
+                <h3>WED</h3>
+                <h2>6</h2>
             </div>
-            
-            <div class="calllist-item flex-item container flex">
-                <div class="callist-left flex-item">
-                    <div class="day">WED</div>
-                    <div class="dayofmonth">6</div>
-                </div>
+            <a class="right" href="../eventdetail">
+                <h3>CLE</h3>
+                <h4>10:00 - 16:00</h4>
+            </a>
 
-                <a class="callist-right item" href="../eventdetail">
-                    <div class="title">CLE</div>
-                    <div class="time">10:00 - 16:00</div>
-                </a>
-
-
-            </div>
-
-            <div class="calllist-item flex-item container flex">
-                <div class="callist-left flex-item">
-                    <div class="day"></div>
-                    <div class="dayofmonth"></div>
-                </div>
-
-                <a class="callist-right item" href="../eventdetail">
-                    <div class="title">BB Ironman Assesment</div>
-                    <div class="time">16:00 - 16:15</div>
-                </a>
-            </div>
-
-            <div class="calllist-item flex-item container flex">
-                <div class="callist-left flex-item">
-                    <div class="day">THU</div>
-                    <div class="dayofmonth">7</div>
-                </div>
-
-                <a class="callist-right item" href="../eventdetail">
-                    <div class="title">Programmeren 5 Praktijk</div>
-                    <div class="time">13:00 - 16:00</div>
-                </a>
-            </div>
-
-            <div class="calllist-item flex-item container flex">
-                <div class="callist-left flex-item">
-                    <div class="day">MON</div>
-                    <div class="dayofmonth">11</div>
-                </div>
-
-                <a class="callist-right item" href="../eventdetail">
-                    <div class="title">CLE</div>
-                    <div class="time">9:30 - 12:30</div>
-                </a>
-            </div>
-            <!-- end repeat -->
 
         </div>
-    </section>
 
-    <a class="btn fab-btn fab-rightbott"><div class="fab-btn fab-rightbott btn-content btn-add"></div></a>
+        <div class="item flex">
+            <div class="left"></div>
+            <a class="right" href="../eventdetail">
+                <h3>BB Ironman Assesment</h3>
+                <h4>16:00 - 16:15</h4>
+            </a>
+        </div>
 
+        <div class="item flex">
+            <div class="left">
+                <h3>THU</h3>
+                <h2>7</h2>
+            </div>
+            <a class="right" href="../eventdetail">
+                <h3>Programmeren 5 Praktijk</h3>
+                <h4>13:00 - 16:00</h4>
+            </a>
+        </div>
+
+        <div class="item flex">
+            <div class="left">
+                <h3>MON</h3>
+                <h2>11</h2>
+            </div>
+            <a class="right" href="../eventdetail">
+                <h3>CLE</h3>
+                <h4>9:30 - 12:30</h4>
+            </a>
+        </div>
+        <!-- end repeat -->
+
+        <button class="btn fab-btn fab-rightbott"><div class="fab-btn fab-rightbott btn-content btn-add"></div></button>
+
+    </main>
     </div>
 
-    <section class="bottomnavbar-container">
-        <nav class="bottomnavbar container flex nav">
-            <a href="../main" class="btn nav-btn btn-home"><br><div class="btn-text">Home</div></a>
-            <a href="../events" class="btn nav-btn btn-event active"><br><div class="btn-text">Events</div></a>
-            <a href="../login" class="btn nav-btn btn-settings"><br><div class="btn-text">Settings</div></a>
+    <footer class="bottomnavbar-container">
+        <nav class="bottomnavbar flex">
+            <a href="../home" class="btn nav-btn 
+                btncontent-home">
+                <h4>Home</h4>
+            </a>
+            <a href="../events" class="btn nav-btn 
+                btncontent-event active">
+                <h4>Events</h4>
+            </a>
+            <a href="../login" class="btn nav-btn 
+                btncontent-login">
+                <h4>Login</h4>
+            </a>
         </nav>
-    </section>
+    </footer>
 
 </body>
 </html>

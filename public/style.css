@@ -59,14 +59,12 @@ body {
     font-size: 1em;
 }
 
-.container {
+.flex {
     margin: 0 auto;
     padding: 0 auto;
 
     overflow: auto;
-}
 
-.flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,13 +73,18 @@ body {
     height: 100%;
 }
 
-.flexrow {
-    flex-direction: row;
-}
+.flex-row {
+    margin: 0 auto;
+    padding: 0 auto;
 
-.flexitem {
-    padding: 20px;
-    margin: 10px;
+    overflow: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
 }
 
 .webcontainer {
@@ -263,18 +266,20 @@ a .fab-btn {
     justify-content: space-between;
 }
 
-/* ## Icons */
+/* ## Icons Button Content */
 
-.btn-options::before        { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f142"; }
-.btn-add::before            { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f067"; }
-.btn-home::before           { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f015"; }
-.btn-event::before          { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f133"; }
-.btn-inbox::before          { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f01c"; }
-.btn-settings::before       { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f013"; }
-.btn-back::before           { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f053"; }
-.btn-calendarcheck::before  { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f274"; }
-.btn-edit::before           { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f044"; }
+.btncontent-options::before        { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f142"; }
+.btncontent-add::before            { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f067"; }
+.btncontent-home::before           { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f015"; }
+.btncontent-event::before          { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f133"; }
+.btncontent-inbox::before          { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f01c"; }
+.btncontent-settings::before       { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f013"; }
+.btncontent-back::before           { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f053"; }
+.btncontent-calendarcheck::before  { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f274"; }
+.btncontent-edit::before           { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f044"; }
 
+.btncontent-login::before          { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f2f6"; }
+ 
 /* # Navbuttons */
 
 .nav-btn {
@@ -302,6 +307,12 @@ a .fab-btn {
     color: var(--primary-color2);
 }
 
+.nav-btn > h4 {
+    color: var(--onsurface-color2);
+     
+    margin: 0;
+    font-size: 0.5em;
+}
 
 @media (min-width:600px) { 
     .nav-btn {
@@ -352,7 +363,7 @@ select:focus, select:focus {
 
 /* ## Topbar */
 
-.topbar-container {
+.topbar {
     position: fixed;
 
     z-index: 2;
@@ -361,9 +372,7 @@ select:focus, select:focus {
     width: 100%;
     padding: 0;
     height: 90px;
-}
 
-.topbar {
     background: var(--surface-color3);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     flex-direction: row;
@@ -374,7 +383,7 @@ select:focus, select:focus {
     padding: 0 0 0 5%;
 }
 
-.topbar .title  {
+.topbar > h2  {
     color: var(--onsurface-color);
     font-size: 2.8em;
     font-weight: 500;
@@ -417,7 +426,7 @@ select:focus, select:focus {
     padding: 0px 0px;
 }
 
-.nav {
+nav.bottomnavbar  {
     flex-direction: row;
     align-items: flex-end;
 }
@@ -485,20 +494,6 @@ select:focus, select:focus {
     padding: 0;
 }
 
-/* ## Signup */
-
-.login.signup .main {
-    margin: -40px 0 0;
-}
-
-.field-item.space {
-    margin: 20px 0 0;
-}
-
-.field-item.space2 {
-    margin: 60px 0 0;
-}
-
 
 /* ## Logo */
 
@@ -512,7 +507,7 @@ select:focus, select:focus {
 
 /* ## Calendarlist */
 
-.calendar-list {
+.callist {
     top: 90px;
     position: relative;
 
@@ -520,26 +515,21 @@ select:focus, select:focus {
     margin: 10px 20px;
 }
 
-.callist .container.flex {
+.callist .flex {
     flex-direction: row;
     width: 100%;
     margin: 20px 0;
 }
 
-.calllist-item .container .flex {
-    flex-direction: column;
 
-}
-
-
-.callist-left {
+.callist .left {
     width: 20%;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-.callist-left .day {
+.callist .left h3 {
     color: var(--onsurface-color2);
     font-variant: small-caps;
     font-weight: 300;
@@ -548,7 +538,7 @@ select:focus, select:focus {
     padding: 0;
 }
 
-.callist-left .dayofmonth {
+.callist .left h2 {
     color: var(--onsurface-color);
     font-size: 3em;
     font-weight: 700;
@@ -557,7 +547,7 @@ select:focus, select:focus {
 }
 
 
-.callist-right {
+.callist .right {
     background: var(--surface-color2);
     width: 80%;
     margin: 0;
@@ -567,7 +557,7 @@ select:focus, select:focus {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-.callist-right .title {
+.callist .right h3 {
     color: var(--onsurface-color);
     font-size: 1.7em;
     font-weight: 500;    
@@ -575,274 +565,12 @@ select:focus, select:focus {
     padding: 0;
 }
 
-.callist-right .time {
+.callist .right h4 {
     color: var(--onsurface-color2);
-    margin: 0;
-    padding: 0;
-}
-
-
-/* ## Calendardetails */
-
-.calendardetails {
-    position: relative;
-    background: var(--surface-color2);
-    top: 90px;
-
-    margin: -30px 10px 10px;
-    padding: 50px 10px 10px;
-
-    border-radius: 5px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-}
-
-.calendardetails .detail2-field, 
-.calendardetails .detail-field {
-    margin: 10px;
-}
-
-.calendardetails .title {
-    color: var(--onsurface-color);
-
-    margin: 0.6em 0 0.4em;
-
-    font-size: 1.5em;
-    font-weight: 700;
-}
-
-/* ### Presence */
-
-.presence {
-
-}
-
-.presence-info {
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-}
-
-.presence-titlesub {
-    flex-direction: row;
-    margin: 0 10px 0;
-    padding: 0;
-}
-
-.presence .presence-title {
-    color: var(--onsurface-color);
-
-    margin: 0 10px 0 0;
-
-    font-size: 1.5em;
-    font-weight: 700;
-}
-
-.presence .presence-subtitle {
-    color: var(--onsurface-color3);
-
-    margin: 0 0 0 10px;
-
-    font-size: 1.3em;
-    font-weight: 400;
-}
-
-.presence-timeslot {
-    text-align: center;
-    margin: 0 10px 0;
-    padding: 0;
-}
-
-.presence .timeslot-title {
-    color: var(--onsurface-color);
-
-    margin: 0 0 -5px;
-
     font-size: 1em;
-    font-weight: 400;
-
-
-}
-
-.presence .timeslot-time {
-    color: var(--onsurface-color3);
-
-    margin: 0;
-
-    font-size: 1.3em;
-    font-weight: 400;
-}
-
-
-
-.presence-main {
-    background: var(--surface-color3);
-    width: 100%;
-    height: 100px;
-    border-radius: 5px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-}
-
-.presence-form.container {
-    width: 100%;
-    flex-direction: row;
-    flex-grow: 1;
-    justify-content: space-evenly;
-}
-
-.presence-form {
-    text-align: center;
-}
-
-.presence-form label {
-    color: var(--onsurface-color3);
-
-    display: block;
-
-    margin: 0 0 5px 0;
-    font-size: 1.3em;
-    font-variant: small-caps;
-}
-
-/* .presence-form input[type="radio"] {
-    opacity: 0;
-    position: fixed;
-    width: 0;
-} */
-
-/* ## Settings */
-
-.settings {
-    position: relative;
-    top: 90px;
-    padding: 10px;
-    width: 100%;
-    margin-bottom: 190px;
-}
-
-
-
-.settings-search {
-    margin: 10px 0 0;
-    width: 100%;
-    text-align: center;
-}
-
-.settings-search .field-item {
-    width: 60%;
-    margin: 0 auto;
-}
-
-.settings-search input {
-    width: 100%;
-}
-
-.settings-search label {
-    text-align: left;
-}
- 
-.settings-mainbutton {
-    margin: 10px;
-    width: 100%;
-    text-align: center;
-}
-
-.settings-mainbutton .btn {
-    width: 60%;
-    padding: 12px 20px;
-}
-
-
-.settings-main.container{
-    position: relative;
-    background: var(--surface-color2);
-    width: 100%;
-    margin: 15px 0 0;
-
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-}
-
-.settings-main .btn {
-    width: 80%;
-    text-align: center;
-}
-
-.setting {
-    margin: 5px;-
-}
-
-
-/* ## Users table */
-
-.users-table {
-    background-color: var(--surface-color1);
-    position: relative;
-    top: 90px;
-    margin: 20px 20px 200px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-}
-
-.users {
-    width: 100%;
-    margin: 0 0 10px;
-}
-
-/* ## General Table Details */
-
-.tabledetails {
-    background-color: var(--surface-color1);
-    position: relative;
-    top: 90px;
-    margin: 20px 20px 200px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-}
-
-.tabledetails .item { 
-    margin: 20px 0;
-    padding: 0;
-}
-
-.tabledetails .item input[type="text"],
-.tabledetails .item input[type="password"] {
-    width: 100%;
-}
-
-.tabledetails h4  {
-    color: var(--onsurface-color);
-
+    font-weight: 400;    
     margin: 0;
     padding: 0;
-}
-
-.tabledetails p  {
-    color: var(--onsurface-color2);
-
-    padding: 0;
-    margin: 0;
-
-    font-variant: small-caps;
-}
-
-/* ## Generalcreate Section */
-
-.generalcreate .datafield-item {
-    margin: 20px 0;
-}
-
-.generalcreate p  {
-    color: var(--onsurface-color2);
-
-    padding: 0;
-    margin: 0;
-
-    font-variant: small-caps;
 }
 
 
