@@ -24,6 +24,11 @@
     --onsurface-color3:     #FFFFFF60;
 
     --onerror-color:        #000000dd;
+
+    /* Font */
+
+    font-size: 1em;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 
@@ -42,9 +47,6 @@
 body {
     background: var(--bg-color);
     color: var(--onsurface-color);
-
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-size: 1em;
 }
 
 .flex {
@@ -85,7 +87,7 @@ h1 {
 
     margin: 0.7em 0;
 
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: 800;
 }
 
@@ -94,7 +96,7 @@ h2 {
 
     margin: 0.7em 0;
 
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -103,7 +105,7 @@ h3 {
 
     margin: 0.8em 0;
 
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -112,7 +114,7 @@ h4 {
 
     margin: 1em 0;
 
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
@@ -121,7 +123,7 @@ h5 {
 
     margin: 1em 0;
 
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
@@ -130,12 +132,12 @@ h6 {
 
     margin: 1em 0;
 
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-weight: 700;
 }
 
 p {
-    margin: 1em 0;
+    margin: 1rem 0;
 }
 
 a {
@@ -166,12 +168,12 @@ input[type="submit"] {
 
     display: inline-block;
     
-    padding: 10px 30px;
+    padding: 0.65em 2em;
 
-    border-radius: 5px;
+    border-radius: 0.35em;
 
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1rem;
 
     cursor: pointer;
 }
@@ -189,22 +191,23 @@ input[type="submit"] {
     background: var(--surface-color1);
     color: var(--primary-color);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    border: 2px solid var(--surface-color2);
+    border: 0.14em solid var(--surface-color2);
 
     display: inline-block;
     
-    padding: 10px 30px;
+    padding: 0.65em 2em;
 
-    border-radius: 5px;
+    border-radius: 0.35em;
 
     text-decoration: none;
+    font-size: 1rem;
 
     cursor: pointer;
 }
 
 .btn.secondary.s2 {
     background: var(--surface-color2);
-    border: 2px solid var(--surface-color3);
+    border: 0.14em solid var(--surface-color3);
 }
 
 .btn.secondary:hover , 
@@ -217,17 +220,34 @@ input[type="submit"] {
 
 /* ### FAB button */
 
+.fab-container {
+    max-width: 1100px;
+
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 5.25rem;
+
+    height: 5.25em;
+    width: 100%;
+    padding: 0;
+
+    z-index: 10;
+}
+
 .fab-btn {
     background: var(--primary-color);
     color: var(--onprimary-color);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-
+    
     display: inline-block;
+    flex-direction: row;
+    align-items: flex-end;
 
-    height: 60px;
-    width: 60px;
+    height: 1.875em;
+    width: 1.875em;
     border: 0;
-    padding: 9px;
+    padding: 0.5rem;
+    margin: 0.66rem;  
 
     outline: 0;
     border-radius: 50%;
@@ -235,32 +255,28 @@ input[type="submit"] {
     text-align: center;
 
     text-decoration: none;
-    font-size: 2em;
+    font-size: 2rem;
 
     cursor: pointer;
 }
 
-.fab-rightbott {
-    position: fixed;
-    bottom: 90px;
-    right: 0;
+@media (min-width:600px) { 
+    .fab-container {
+        top: 3rem;
+        margin: 0;
+        overflow: visible;
+    }
 
-    margin-right: 15%;
-}
-
-@media (max-width:600px) { 
-    .fab-rightbott {
-        margin-right: 10%;  
-        margin-bottom: 10px;  
+    .fab-btn {
+        margin-right: 5rem;
     }
 }
 
-@media (max-width:1100px) { 
-    .fab-rightbott {
-        margin-right: 20px;
+@media (min-width:calc(1100px + 5rem + 8rem)) {
+    .fab-btn {
+        margin-right: -5rem;
     }
 }
-
 
 /* ## Icons Button Content */
 
@@ -280,17 +296,17 @@ input[type="submit"] {
 .nav-btn {
     background: var(--surface-color3);
     color: var(--onsurface-color2);
-    box-shadow: 0 0;
+    box-shadow: 0;
 
     flex-grow: 1;
 
-    min-width: 50px;
+    min-width: 3.125rem;
     max-height: 100%;
     border-radius: 0;
-    padding: 8px 0 12px;
+    padding: .50rem 0 .75rem;
 
     text-align: center;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .nav-btn:hover {
@@ -303,7 +319,7 @@ input[type="submit"] {
      
     margin: 0;
 
-    font-size: 0.5em;
+    font-size: 1rem;
 }
 
 .active.nav-btn,
@@ -313,7 +329,7 @@ input[type="submit"] {
 
 @media (min-width:600px) { 
     .nav-btn {
-        padding: 20px 30px;   
+        padding: 1.25rem 1.9rem;   
     }
 }
 
@@ -325,7 +341,7 @@ label {
 
     display: block;
 
-    margin: 0 0 5px 0;
+    margin: 0 0 0.3em;
 
     font-variant: all-small-caps;
 }
@@ -335,14 +351,15 @@ input[type="password"],
 select {
     background: var(--surface-color2);
     color: var(--onsurface-color2);
-    border:2px solid var(--surface-color2);
-    outline: none;
 
-    padding: 8px 8px;
+    border: 0;
+    outline: 0;
 
-    border-radius: 5px;
+    padding: .5rem .5rem;
 
-    font-size: 1em;
+    border-radius: 0.35rem;
+
+    font-size: 1rem;
 }
 
 input[type="text"]:focus, 
@@ -352,7 +369,7 @@ input[type="password"]:hover,
 select:focus, select:focus {
     color: var(--onsurface-color);
 
-    border:2px solid var(--primary-color);
+    border: 0.14em solid var(--primary-color);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -367,46 +384,45 @@ select:focus, select:focus {
 
     position: fixed;
 
-    flex-direction: row;
-    justify-content: space-between;
-
     z-index: 2;
     top: 0;
 
     width: 100%;
-    height: 90px;
+    height: 5.6rem;
     margin: 0;
-    padding: 0 0 0 5%;
 }
 
-.topbar > h2  {
+.topbar .content {
+    padding-left: 2rem;
+    justify-content: space-between; 
+}
+
+.topbar h2  {
     color: var(--onsurface-color);
 
     margin: 0;
     padding: 0;
 
-    font-size: 2.8em;
+    font-size: 2.8rem;
     font-weight: 500;
 }
 
 .topbar .btn {
     background: 0;
     color: var(--onsurface-color1);
-    box-shadow: 0 0;
+    box-shadow: 0;
 
-    padding: 20px 30px;
+    padding: 1.25rem 2rem;
 
     border-radius: 0;
     text-align: center;
 
-    font-size: 2.2em;
+    font-size: 2.2rem;
 }
 
 /* ## Bottomnavbar */
 
 .bottomnavbar-container {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-
     position: fixed;
     bottom: 0;
 
@@ -416,18 +432,19 @@ select:focus, select:focus {
 
 nav.navbar  {
     background: var(--surface-color3);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
     flex-direction: row;
     align-items: flex-end;
 
     max-width: 100%;
-    padding: 0px 0px;
+    padding: 0;
 }
 
 @media (min-width:600px) { 
     nav.navbar {
         max-width: min-content;
-        padding: 0px 30px;
+        padding: 0 1.875rem;
     }
 }
 
@@ -436,7 +453,7 @@ nav.navbar  {
 /* ## Login */
 
 .login {
-    margin: 20px;
+    margin: 1.25rem;
 }
 
 .login .maincard {
@@ -444,33 +461,33 @@ nav.navbar  {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
     width: 100%;
-    padding: 15px;
+    padding: 0.94rem;
 
-    border-radius: 5px;
+    border-radius: 0.35em;
+}
+
+.login h3 {
+    margin-top: 0;
 }
 
 .login .field-item {
     width: 100%;
-    margin: 5px 0;
+    margin: 0.3rem 0;
 }
 
 .login .field-item input[type="text"], 
 .login .field-item input[type="password"] {
     width: 100%;
-    height: 50px;
+    height: 3.2rem;
 
     font-weight: 100;
-    font-size: 1.1em;
-}
-
-.login h3 {
-    margin: 0;
+    font-size: 1.1rem;
 }
 
 .login .buttons {
     justify-content: space-between;
 
-    margin: 15px;
+    margin: 0.94rem;
     padding: 0;
 }
 
@@ -484,7 +501,7 @@ nav.navbar  {
 
     text-align: center;
 
-    font-size: 12em;
+    font-size: 12rem;
     font-weight: 900;
 }
 
@@ -522,7 +539,7 @@ nav.navbar  {
     padding: 0;
 
     font-weight: 300;
-    font-size: 1.7em;
+    font-size: 1.7rem;
     font-variant: all-all-small-caps;
 }
 
@@ -532,7 +549,7 @@ nav.navbar  {
     margin: 0;
     padding: 0;
 
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 700;
 }
 
@@ -545,7 +562,7 @@ nav.navbar  {
     margin: 0;
     padding: 20px;
 
-    border-radius: 5px;
+    border-radius: 0.35em;
 
 }
 
@@ -555,7 +572,7 @@ nav.navbar  {
     margin: 0;
     padding: 0;
 
-    font-size: 1.7em;
+    font-size: 1.7rem;
     font-weight: 500;  
 }
 
@@ -565,7 +582,7 @@ nav.navbar  {
     margin: 0;
     padding: 0;
 
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 400; 
 }
 
