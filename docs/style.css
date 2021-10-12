@@ -27,7 +27,6 @@
 
     /* Font */
 
-
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
@@ -539,12 +538,10 @@ nav.navbar  {
 
 
 .callist {
-    flex-direction: column;
-
     margin: 1.25rem;
 }
 
-.callist .flex-row {
+.callist .item {
     width: 100%;
     margin: 1.25rem 0;
 }
@@ -589,7 +586,6 @@ nav.navbar  {
     padding: 1.25rem;
 
     border-radius: 0.35em;
-
 }
 
 .callist .right h3 {
