@@ -11,11 +11,11 @@ CLE2 Reservation Website Frontend
 
 - [x] CSS Selectors
 - [x] tags, ids & classes
-- [ ] Absolute en relatieve eenheden
+- [x] Absolute en relatieve eenheden
 - [x] Responsive
 - [x] desktop/mobile
 - [x] media queries
-- [ ] relatieve eenheden
+- [x] relatieve eenheden
 - [x] website werkt in verschillende browsers
 
 - [x] css ordenen
